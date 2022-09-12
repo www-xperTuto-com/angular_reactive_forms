@@ -1,0 +1,27 @@
+<form [formGroup]="userForm" (ngSubmit)="adduser()">
+
+  <mat-card>
+    <mat-form-field appearance="fill">
+      <mat-label>Pseudo*</mat-label>
+      <input matInput type="text" formControlName="pseudo" placeholder="Pseudo">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Name*</mat-label>
+      <input matInput type="text" formControlName="name" placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Age</mat-label>
+      <input matInput type="text" formControlName="age" placeholder="Age">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="text" formControlName="email" placeholder="Email">
+    </mat-form-field>
+  </mat-card>
+
+  <mat-card-actions>
+    <br>
+    <button type="submit" mat-raised-button color="primary">Submit</button><br><br>
+  </mat-card-actions>
+
+</form>
